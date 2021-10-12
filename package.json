@@ -1,0 +1,54 @@
+{
+  "name": "@luke-h1/chakra-ui-flashless",
+  "version": "0.2.12",
+  "description": "Tools to implement flashless color modes in Chakra UI",
+  "author": "Luke Howsam",
+  "repository": "luke-h1/chakra-ui-flashless",
+  "license": "MIT",
+  "main": "dist/index.js",
+  "module": "dist/index.esm.js",
+  "keywords": [
+    "chakra-ui",
+    "color",
+    "chakra",
+    "darkmode",
+    "fouc",
+    "flash"
+  ],
+  "eslintConfig": {
+    "extends": "@luke-h1/eslint-config/typescript"
+  },
+  "scripts": {
+    "build": "rollup -c",
+    "pretest": "eslint src/*",
+    "test": "exit",
+    "prepare": "npm run build"
+  },
+  "devDependencies": {
+    "@chakra-ui/react": "^1.6.9",
+    "@emotion/react": "^11.4.1",
+    "@emotion/styled": "^11.3.0",
+    "@types/lodash.merge": "^4.6.6",
+    "@types/react": "^17.0.28",
+    "@typescript-eslint/eslint-plugin": "^5.0.0",
+    "@typescript-eslint/parser": "^5.0.0",
+    "eslint": "^7.32.0",
+    "eslint-config-airbnb": "^18.2.1",
+    "eslint-plugin-import": "^2.25.1",
+    "eslint-plugin-jsx-a11y": "^6.4.1",
+    "eslint-plugin-react": "^7.26.1",
+    "eslint-plugin-react-hooks": "^4.2.0",
+    "react": "^17.0.2",
+    "rollup": "^2.58.0",
+    "rollup-plugin-typescript2": "^0.30.0",
+    "typescript": "^4.4.3"
+  },
+  "dependencies": {
+    "framer-motion": "^4.1.17",
+    "lodash.merge": "^4.6.2",
+    "outdent": "^0.8.0"
+  },
+  "peerDependencies": {
+    "@chakra-ui/react": "^1.6.9"
+  }
+}
